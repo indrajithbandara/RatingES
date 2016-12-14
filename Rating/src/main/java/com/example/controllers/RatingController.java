@@ -44,7 +44,7 @@ public class RatingController {
 			
 			Rating rating = new Rating (requestBody.getStars_number(), requestBody.getComment());
 			ratingService.save(rating);
-			return new ResponseEntity<>(new Rating(3, "Top"), HttpStatus.CREATED);
+			return new ResponseEntity<>(rating, HttpStatus.CREATED);
 			
 		}catch(Exception e){
 			e.printStackTrace();
