@@ -16,8 +16,8 @@ public class RatingServiceImpl implements RatingService {
 	}
 
 	@Override
-	public Rating findByStarsNumber(int stars_number) {
-		return ratingRepository.findByStarsNumber(stars_number);
+	public Rating findByStarsNumber(int starsNumber) {
+		return ratingRepository.findByStarsNumber(starsNumber);
 	}
 
 	@Override

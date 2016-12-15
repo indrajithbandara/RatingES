@@ -12,13 +12,13 @@ public class Rating {
 	@GeneratedValue
 	private Long id;
 	@Column
-	private int stars_number;
+	private int starsNumber;
 	@Column
 	private String comment;
 	
 	
-	public Rating (int stars_number, String comment){
-		this.stars_number = stars_number;
+	public Rating (int starsNumber, String comment){
+		this.starsNumber = starsNumber;
 		this.comment = comment;
 	}
 	
@@ -26,12 +26,12 @@ public class Rating {
 		this(0, "");
 	}
 
-	public int getStars_number() {
-		return stars_number;
+	public int getStarsNumber() {
+		return starsNumber;
 	}
 
-	public void setStars_number(int stars_number) {
-		this.stars_number = stars_number;
+	public void setStarsnumber(int starsNumber) {
+		this.starsNumber = starsNumber;
 	}
 
 	public String getComment() {
